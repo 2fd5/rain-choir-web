@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ede4d2">
+<meta name="description" content="Tilt a mushroom canopy. Catch the rain. A tiny, free browser puzzle from Fungalware.">
+<title>Rain Choir · Fungalware</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="rain-choir.js"></script>
+<script defer src="page.js"></script>
+<main>
+  <header><a class="wordmark" href="./">FUNGALWARE</a><span>A SMALL PLAYABLE EXPERIMENT</span></header>
+  <section class="intro">
+    <p class="eyebrow">01—03 / A CANOPY, A LITTLE RAIN</p>
+    <h1>Rain Choir<span>.</span></h1>
+    <p>Tilt the mushroom caps. Guide each drop to a thirsty root.<br>Make the whole garden bloom before the rain runs out.</p>
+    <button id="play" disabled>Loading the garden…</button>
+    <p id="loading" role="status">Preparing the game. A small download, then everything runs here.</p>
+    <noscript>This game needs JavaScript and WebAssembly enabled.</noscript>
+  </section>
+  <section id="garden" hidden aria-label="Rain Choir game">
+    <div class="game-frame"><canvas id="canvas" width="1180" height="800" tabindex="0" aria-label="Rain Choir. Space releases rain. A, S and D tilt caps. H opens help."></canvas></div>
+    <div class="toolbar" aria-label="Game controls">
+      <button data-key="32">Rain <kbd>Space</kbd></button>
+      <button data-key="97">Top <kbd>A</kbd></button>
+      <button data-key="115">Left <kbd>S</kbd></button>
+      <button data-key="100">Right <kbd>D</kbd></button>
+      <button id="pause" data-key="112">Pause</button>
+      <button data-key="114">Restart</button>
+      <button id="next" data-key="13" hidden>Next scene</button>
+      <button id="help" data-key="104">Help</button>
+      <button id="sound" data-key="109" aria-pressed="true">Sound on</button>
+    </div>
+    <p id="status" role="status"></p>
+  </section>
+  <section class="notes" aria-label="How to play">
+    <div><h2>One drop at a time.</h2><p>Click a cap to tilt it, or press <kbd>A</kbd>, <kbd>S</kbd>, <kbd>D</kbd>. Press <kbd>Space</kbd> to release rain. You can tilt a cap while a drop is still sliding.</p></div>
+    <div><h2>Every root wants a drink.</h2><p>A full root wastes extra water. The first two scenes let you take your time. In the third, Space starts a short rainstorm. <kbd>1</kbd>–<kbd>3</kbd> selects a scene.</p></div>
+    <div><h2>Take a breath.</h2><p><kbd>P</kbd> pauses. <kbd>R</kbd> restarts. <kbd>H</kbd> shows help. Leaving the tab pauses the garden; resume when you return. Best played with a keyboard or mouse.</p></div>
+  </section>
+  <footer><span>Three scenes · Single player · Original procedural art &amp; sound</span><a href="https://github.com/2fd5/rain-choir-web">About this build ↗</a></footer>
+</main>
+</html>

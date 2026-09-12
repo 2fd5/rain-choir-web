@@ -1,0 +1,38 @@
+{
+  "game": "Rain Choir",
+  "compiler": "emcc (Emscripten gcc/clang-like replacement + linker emulating GNU ld) 6.0.9 (4e4223852a0835923411059a3929907d7df1232e)",
+  "files": {
+    "index.html": {
+      "bytes": 2858,
+      "sha256": "b1261214081c6d0aadc9ac5621a7ffad25b5b63127ec7bacd8a2e9bc129ac566"
+    },
+    "page.js": {
+      "bytes": 4026,
+      "sha256": "e06cbfc3359b984c7ef74d16cf70bcfce75fdffe9230044d6fffa3a989e74f99"
+    },
+    "style.css": {
+      "bytes": 2750,
+      "sha256": "5e71a9c9557c70d1372a0dc641341334bc3764583153f67fd56ab12c1d9dc6e2"
+    },
+    "rain-choir.js": {
+      "bytes": 148715,
+      "sha256": "f7a2a5a3e4a51d0c286b1afe1938a62361aa70e4e0caed2e12fa27c6453c8c83"
+    },
+    "rain-choir.wasm": {
+      "bytes": 736666,
+      "sha256": "7c970e2a2bcb6e07718f8c8cb6b534eb397df330c3fe9b57149c443e23f4cecb"
+    },
+    "README.md": {
+      "bytes": 1650,
+      "sha256": "a95f50a9879a4b4cdf488ac20f3b39e32353fd19ce7cfd7795f80d16e05178cb"
+    },
+    "THIRD-PARTY-NOTICES.txt": {
+      "bytes": 30876,
+      "sha256": "0fd2b513fa32347ba444d1e3abf3f9791fd6c57489ddb234ec0b3001c274ec43"
+    },
+    ".nojekyll": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}
