@@ -65,6 +65,11 @@ document.querySelectorAll("[data-key]").forEach(button => button.addEventListene
 canvas.addEventListener("pointerdown", () => canvas.focus({preventScroll:true}));
 canvas.addEventListener("contextmenu", event => event.preventDefault());
 canvas.addEventListener("keydown", event => {
+  // SDL otherwise consumes Tab too. Keep normal focus navigation and browser shortcuts.
+  if (event.key === "Tab" || event.ctrlKey || event.metaKey) {
+    event.stopImmediatePropagation();
+    return;
+  }
   if (["Space", "ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].includes(event.code)) event.preventDefault();
 });
 function pauseAway() { if (started && !failed) { game._rain_web_pause(); updateStatus(); } }
